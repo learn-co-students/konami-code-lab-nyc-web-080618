@@ -1,3 +1,5 @@
+// document.addEventListener("DOMContentLoaded", init);
+
 const codes = [
   "ArrowUp",
   "ArrowUp",
@@ -11,6 +13,15 @@ const codes = [
   "a"
 ];
 
-function init() {
-  // your code here
-}
+// function init() {
+  let i = 0;
+  document.body.addEventListener("keydown", (e) => {
+    // debugger;
+      const key = e.key;
+      i = (codes[i] === key) ? ++i : 0
+    if (i === codes.length) {
+      window.alert("done");
+      i = 0
+    }
+  });
+// }
