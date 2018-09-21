@@ -22,9 +22,9 @@ const codes = [
 
 
     if (index === codes.length) {
-      window.alert("Hurray!");
+      window.alert("Hurray!")
       index = 0
     }
 
-  });
+  })
 }
